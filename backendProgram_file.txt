@@ -1,0 +1,464 @@
+(1) add nd sub 2 num
+
+using System;
+
+class Calculator
+{
+    static void Main(string[] args)
+    {
+        Console.Write("Enter the first number: ");
+        int num1 = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Enter the second number: ");
+        int num2 = Convert.ToInt32(Console.ReadLine());
+
+        int sum = Add(num1, num2);
+        int difference = Subtract(num1, num2);
+
+        Console.WriteLine("Sum: " + sum);
+        Console.WriteLine("Difference: " + difference);
+    }
+
+    static int Add(int a, int b)
+    {
+        return a + b;
+    }
+
+    static int Subtract(int a, int b)
+    {
+        return a - b;
+    }
+}
+----------------------------------------------------*********----------------------------------------------------
+(2) mult nd div 2 num
+
+public class {
+ 
+ public static void Main(String[] args) {
+  
+  int i = input.nextInt()
+   
+  Console.Write("Input first number: ");
+  
+  int num1 = Console.Read();
+  
+  Console.Write("Input second number: ");
+      
+  Console.WriteLine(num1 + " x " + num2 + " = " + (num1 * num2));
+   
+  Console.WriteLine(num1 + " / " + num2 + " = " + (num1 / num2));
+  }
+}
+-----------------------------------------------------*********---------------------------------------------------
+
+(3) square & cube 
+
+public class {
+    public static void Main(String args[]) {
+        int = input.nextInt()
+
+        Console.Write("Enter an integer number: ");
+        num = Console.Read();
+
+    Console.WriteLine("Square of " + num + " is: " + " );
+        Console.WriteLine("Cube of " + num + " is: " + " );
+            }
+}
+--------------------------------------------------*************-------------------------------------------------
+
+(4) square root
+
+public class SquareRoot {
+
+public static void Main(String args[])
+{
+double a = 100;
+
+Console.WriteLine(Math.sqrt(a));
+
+double b = -81.00;
+
+Console.WriteLine(Math.sqrt(b));
+
+double c = 0.0/0;
+
+Console.WriteLine(Math.sqrt(c));
+
+double d = 1.0/0;
+
+Console.WriteLine(Math.sqrt(d));
+
+double e = 0.0;
+
+Console.WriteLine(Math.sqrt(e));
+}
+
+}
+
+----------------------------------------------------************------------------------------------------------
+(5)perimeter of square
+
+
+using System;
+ 
+
+class Program {
+
+    static void Main()
+
+    {
+
+        double area, side, perimeter;
+
+        area = 16;
+
+        side = Math.Sqrt(area);
+       
+
+        perimeter = 4 * side;
+
+        Console.WriteLine("Perimeter: " + perimeter);
+
+    }
+}
+
+--------------------------------------------------***************----------------------------------------------
+(6) Area of circumference
+
+using System;
+ 
+class Program
+{
+public static void Main()
+{
+double r_cir, per_cir, PI, area_cir;
+ 
+Console.Write("Enter radius of circle: ");
+ 
+r_cir = Convert.ToDouble(Console.ReadLine());
+ 
+PI = Math.Pow(Math.PI, 1);
+area_cir = Math.Round(PI * Math.Pow(r_cir, 2), 2);
+per_cir = Math.Round(2 * PI * r_cir, 2);
+ 
+Console.WriteLine("\nCircumference of circle: {0}", per_cir);
+Console.WriteLine("Area of circle: {0}", area_cir);
+ 
+Console.Read();
+}
+}
+--------------------------------------------------***************----------------------------------------------
+
+
+(7) Area of sphere
+
+using System;  
+                      
+public class Program  
+{  
+    public static void Main()  
+    {  
+int radius=37;  
+  double pie=3.14285714286;  
+  double area_sphere=4*pie*(radius*radius);   
+   Console.WriteLine("Surface area of sphere="+area_sphere);  
+    }  
+}
+--------------------------------------------------***************----------------------------------------------
+
+
+(8) Volume of Cylinder
+
+using System;  
+public class Program  
+{  
+    public static void Main()  
+    {  
+int height=38;  
+int radius=35;  
+double pie=3.14285714286;  
+ double volume=pie*(radius*radius)*height;  
+ Console.WriteLine("Volume of cylinder="+volume);  
+}  
+}
+--------------------------------------------------***************----------------------------------------------
+
+
+(9) Age in days
+
+using System; 
+
+class GFG { 
+  
+    static void Main(int current_date,  
+
+                       int current_month, 
+
+                        int current_year,   
+
+                          int birth_date, 
+
+                         int birth_month,  
+
+                          int birth_year) 
+
+    { 
+
+        int []month = { 31, 28, 31, 30, 31, 30,  
+
+                      31, 31, 30, 31, 30, 31 };  
+
+        if (birth_date > current_date) 
+
+        { 
+
+            current_month = current_month - 1; 
+
+            current_date = current_date  
+
+                      + month[birth_month - 1]; 
+
+        } 
+  
+        if (birth_month > current_month) 
+
+        { 
+
+            current_year = current_year - 1; 
+
+            current_month = current_month + 12; 
+
+        } 
+       
+        int calculated_date = current_date  - birth_date;                        
+
+        int calculated_month = current_month  - birth_month; 
+
+        int calculated_year = current_year  - birth_year;  
+
+        Console.WriteLine("Present Age"); 
+
+        Console.WriteLine("Years: " 
+
+                           + calculated_year +  
+
+                " Months: " + calculated_month  
+
+               + " Days: " + calculated_date); 
+
+    }  
+
+    public static void Main() 
+
+    { 
+
+        int current_date = 7; 
+
+        int current_month = 12; 
+
+        int current_year = 2017; 
+        
+
+        int birth_date = 16; 
+
+        int birth_month = 12; 
+
+        int birth_year = 2009; 
+        
+ findAge(current_date, current_month,  
+
+                   current_year, birth_date,  
+
+                   birth_month, birth_year); 
+
+    } 
+}
+
+
+(10) SI & CI
+
+using system;
+
+public class Main {
+   public static void Main (String []args){
+      double p, r, t, s_interest, c_interest;
+      p = 50000;
+      r = 20;
+      t = 5;
+      Console.WriteLine("Principal = "+p);
+      Console.WriteLine("Annual Rate of Interest = "+r);
+      Console.WriteLine("Time (years) = "+t);
+      s_interest = (p * r * t)/100;
+      c_interest = p * (1.0+r/100.0,t) - p;
+      Console.WriteLine("Simple Interest: "+s_interest);
+      Console.WriteLine("Compound Interest: "+c_interest);
+   }
+}
+--------------------------------------------------***************----------------------------------------------
+
+
+(12) sec into hr-min-sec
+
+using System; 
+
+class GFG { 
+
+    static void ConvertSectoDay(int n) 
+
+    { 
+
+        int day = n / (24 * 3600); 
+
+
+        n = n % (24 * 3600); 
+
+        int hour = n / 3600; 
+
+      
+        n %= 3600; 
+
+        int minutes = n / 60 ; 
+
+      
+        n %= 60; 
+
+        int seconds = n; 
+
+
+        Console.WriteLine( day + " " 
+
+              + "days " + hour + " " 
+
+          + "hours " + minutes + " "
+
+        + "minutes " + seconds + " "
+
+                        + "seconds "); 
+
+    } 
+
+    public static void Main ()  
+
+    { 
+     
+        int n = 129600; 
+
+          
+        ConvertSectoDay(n); 
+
+    } 
+}
+--------------------------------------------------***************----------------------------------------------
+
+
+(19) dollars into rupees
+
+using System;
+
+class MainClass {
+  public static void Main (string[] args) {
+    Console.WriteLine ("Please enter dollars:");
+    double dollars = Convert.ToDouble(Console.ReadLine());
+    double rupees = dollars * 64;
+    Console.WriteLine(rupees + " Rupees");
+  }
+
+--------------------------------------------------***************----------------------------------------------
+
+(22) Area of Triangle
+
+using System;  
+class main  
+{   static void Main()   
+    {  
+      float  b = 5 ,h =23 ;  
+      double area =  (b*h) / 2 ;   
+      Console.WriteLine("Area of Triangle is :"+area);  
+    }
+}
+--------------------------------------------------***************----------------------------------------------
+
+(24) Pos or Neg
+
+using System;
+ 
+class Program {
+
+    static void Main(string[] args)
+
+    {
+
+        int num = 10;
+
+        if (num > 0) {
+ Console.WriteLine("Positive number");
+
+        }
+
+        else if (num == 0) {
+
+    Console.WriteLine("Zero");
+
+        }
+
+        else {
+            Console.WriteLine("Negative number");
+
+        }
+    }
+}
+--------------------------------------------------***************----------------------------------------------
+
+
+(25) Even or Odd
+
+using System; 
+
+class GFG { 
+
+    public static bool isEven(int n) 
+
+    { 
+     return (n % 2 == 0); 
+   } 
+    public static void Main() 
+  { 
+        int n = 101; 
+
+        if (isEven(n) == true) 
+       Console.WriteLine("Even"); 
+
+        else
+          Console.WriteLine("Odd"); 
+
+ }
+
+}
+
+--------------------------------------------------***************----------------------------------------------
+
+
+(26) Smallest of given two num
+
+using System;
+ 
+
+public class GFG {
+
+    static public void Main()
+
+    {
+
+        int[] arr = { 111, 13, 25, 9, 34, 1 };
+
+        int n = arr.Length;
+
+        Array.Sort(arr);
+    Console.WriteLine("smallest element is " + arr[0]);
+
+    }
+}
+--------------------------------------------------***************----------------------------------------------
+
+
+
